@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính</title>
+</head>
+<body>
+<h2><strong>Caculator</strong></h2>
+<form>
+    <input type="text" id="ve1"> <input type="text" id="ve2"><br><br>
+    <button type="button" value="addition(+)" onclick="cong()">addition(+)</button>
+    <button type="button" value="subtraction(-)"  onclick="tru()">subtraction(-)</button>
+    <button type="button" value="multiplication(x)"  onclick="nhan()">multiplication(x)</button>
+    <button type="button" value="division(/)" onclick="chia()">division(/)</button>
+    <br>
+    <p id="a">Result :</p>
+</form>
+<script>
+    function cong() {
+        let a =+document.getElementById("ve1").value;
+        let b =+document.getElementById("ve2").value;
+        document.getElementById("a").innerHTML+=a+b;
+    }
+    function tru() {
+        let a =document.getElementById("ve1").value;
+        let b =document.getElementById("ve2").value;
+        document.getElementById("a").innerHTML+=a-b;
+    }
+    function nhan() {
+        let a =document.getElementById("ve1").value;
+        let b =document.getElementById("ve2").value;
+        document.getElementById("a").innerHTML+=a*b;
+    }
+    function chia() {
+        let a =document.getElementById("ve1").value;
+        let b =document.getElementById("ve2").value;
+        document.getElementById("a").innerHTML+=a/b;
+    }
+</script>
+</body>
+</html>
